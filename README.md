@@ -2,38 +2,41 @@
 
 ## Documentation Generation Overview
 
-The Contact Book Project demonstrates the potential of Large Language Models (LLMs) to automate the generation of documentation for MkDocs. This project aims to simplify the creation of structured and comprehensive documentation for software projects.
+The Contact Book Project leverages the power of LLMs to automate the generation of comprehensive documentation for software projects, streamlining the creation process and ensuring structured, detailed documentation.
 
-## Main Focus
+## Features
 
-- **LLM-Powered Documentation**: Utilizing LLMs to automatically generate detailed documentation for Python scripts and modules, including function descriptions, parameter details, return values, and example usage.
-- **Integration with MkDocs**: Integrating the generated documentation into MkDocs, a static site generator designed for project documentation.
+- **LLM-Powered Documentation**: Automatically generates detailed documentation for Python scripts and modules.
+- **MkDocs Integration**: Seamlessly integrates the generated documentation into MkDocs for easy access and navigation.
 
 ## Improvement Suggestions
 
-- **Instructor for Structured Outputs**: The [Instructor](^5^) library can be used to improve adherence to documentation structure. It is a Python library that facilitates working with structured outputs from LLMs, providing a simple API to manage validation, retries, and streaming responses.
-- **Enhanced Prompting Techniques**: Employing structured prompting techniques can significantly enhance the effectiveness of LLMs in generating documentation. Customizing prompts to fit the specific requirements of a project can lead to better documentation quality.
+- **Instructor for Structured Outputs**: The [Instructor](https://github.com/jxnl/instructor) library can be used to improve adherence to desired documentation structure. It is a Python library that facilitates working with structured outputs from LLMs, providing a simple API to manage validation, retries, and streaming responses.
 
 ## Example Project: Contact Book
 
 ### Example Project Overview
 
-The Contact Book Project is a Python application for managing contact information. It features a user-friendly interface for adding, removing, and viewing contacts. The project is designed for easy expansion, allowing for future enhancements such as database integration.
+The Contact Book Project is a Python application for managing contact information. It features a user-friendly interface for adding, removing, and viewing contacts.
 
-### Features
+### Example Project Features
 
-- **Add Contacts**: Users can add contact information, including names and phone numbers.
-- **Remove Contacts**: Users can remove contacts by specifying the contact's name.
-- **View Contacts**: Users can view all stored contacts.
+- **Add Contacts**: Easily add new contact details.
+- **Remove Contacts**: Remove contacts by specifying the name.
+- **View Contacts**: Browse all stored contact information.
 
-### Installation
+## Installation
 
-The project can be installed using the `requirements.txt` file, which lists all the necessary dependencies.
+Install the project dependencies using the provided `requirements.txt` file.
 
-## Conclusion
+## Additional Tools
 
-LLMs offer a promising solution for automating documentation generation in MkDocs projects, potentially reducing manual effort and improving documentation consistency and quality.
+### litellm
 
----
+The project utilizes `litellm` to enable calling various LLM APIs using a unified OpenAI format. This facilitates interaction with APIs from Bedrock, Huggingface, VertexAI, TogetherAI, Azure, OpenAI, and others.
 
-Additionally, the Contact Book Project can serve as a replacement or enhancement to the `mkdocstrings` Python library¹, which is used for automatic documentation generation from Python source code. By leveraging LLMs and tools like Instructor, the Contact Book Project can showcase a novel approach to creating and maintaining project documentation.
+#### Setting Up
+
+To use `litellm`, set the appropriate environment variable, such as `OPENAI_API_KEY` or `COHERE_API_KEY`.
+
+For more details, visit the [litellm](https://github.com/BerriAI/litellm) repository.
