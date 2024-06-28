@@ -1,0 +1,5 @@
+plugins:
+- search
+site_name: My Contact Book
+theme:
+  name: material
